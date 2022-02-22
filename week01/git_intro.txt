@@ -1,8 +1,152 @@
-asdasdasd
-as
-da
-sd
-asd
-as
+hallgato@proto:~$ ssh keygen -t ed25519 -C "akaratsony@gmail.com"
+ssh: Could not resolve hostname keygen: Temporary failure in name resolution
+hallgato@proto:~$ ssh-keygen -t ed25519 -C "akaratsony@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/hallgato/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/hallgato/.ssh/id_ed25519
+Your public key has been saved in /home/hallgato/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:PxsWUSJxLQMC0wE0w3rSbwloDIv9Y8plTYeGBl9lFIg akaratsony@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|   oB=o=O+o..    |
+|. . E++o ooo.    |
+|.= * o .  .o     |
+|o B B + .  .     |
+| . = * oS .      |
+|    * =  . .     |
+| . = o    =      |
+|  o      . +     |
+|          .      |
++----[SHA256]-----+
+hallgato@proto:~$ ls -/.ssh/
+ls: érvénytelen kapcsoló -- "/"
+További információkért adja ki a(z) „ls --help” parancsot.
+hallgato@proto:~$ ls -/.ssh/
+ls: érvénytelen kapcsoló -- "/"
+További információkért adja ki a(z) „ls --help” parancsot.
+hallgato@proto:~$ ls ~/.ssh/
+id_ed25519  id_ed25519.pub
+hallgato@proto:~$ more ~/.ssh/id_ed25519.pub 
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILVfJQTRWp/mdM50hvnQdQ4dbOD7VKZAtSz5xR+Qul4g
+ akaratsony@gmail.com
+hallgato@proto:~$ ssh~add ~/.ssh/id_ed25519.pub 
 
-asss
+„ssh~add” parancs nem található, erre gondolt:
+
+  „ssh-add” parancs openssh-client (1:8.2p1-4ubuntu0.4) deb csomagból
+
+Próbálja ki ezt: apt install <deb_neve>
+
+hallgato@proto:~$ ls
+Asztal        Letöltések                              NetBeansProjects
+Dokumentumok  miniconda3                              Nyilvános
+eclipse       Miniconda3-py39_4.10.3-Linux-x86_64.sh  Sablonok
+gyak          munka                                   Videók
+Képek         netbeans-12.6                           Zenék
+hallgato@proto:~$ git clone git@github.com:akaratsony/Prog1.git
+Cloning into 'Prog1'...
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,140.82.121.4' (ECDSA) to the list of known hosts.
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), 7.51 KiB | 3.76 MiB/s, done.
+hallgato@proto:~$ cd Prog1/
+hallgato@proto:~/Prog1$ ls
+LICENSE  README.md
+hallgato@proto:~/Prog1$ git config user.name "Karátsony Ádám"
+hallgato@proto:~/Prog1$ git config user.email "akaratsony@gmail.com"
+hallgato@proto:~/Prog1$ git pull
+Already up to date.
+hallgato@proto:~/Prog1$ 
+hallgato@proto:~/Prog1$ cd week01
+bash: cd: week01: Nincs ilyen fájl vagy könyvtár
+hallgato@proto:~/Prog1$ geddit git_intro.txt &
+[1] 2725
+hallgato@proto:~/Prog1$ 
+„geddit” parancs nem található, erre gondolt:
+
+  „gedit” parancs gedit (40.1-14-g0850b4ae32) snapből
+  „gedit” parancs gedit (3.36.2-0ubuntu1) deb csomagból
+
+See 'snap info <snapname>' for additional versions.
+
+geddit git_intro.txt &
+[2] 2742
+[1]   Kilépett(127)          geddit git_intro.txt
+hallgato@proto:~/Prog1$ 
+„geddit” parancs nem található, erre gondolt:
+
+  „gedit” parancs gedit (40.1-14-g0850b4ae32) snapből
+  „gedit” parancs gedit (3.36.2-0ubuntu1) deb csomagból
+
+See 'snap info <snapname>' for additional versions.
+
+geddit git_intro.txt &
+[3] 2760
+[2]   Kilépett(127)          geddit git_intro.txt
+hallgato@proto:~/Prog1$ 
+„geddit” parancs nem található, erre gondolt:
+
+  „gedit” parancs gedit (40.1-14-g0850b4ae32) snapből
+  „gedit” parancs gedit (3.36.2-0ubuntu1) deb csomagból
+
+See 'snap info <snapname>' for additional versions.
+
+geddit git_intro.txt 
+
+„geddit” parancs nem található, erre gondolt:
+
+  „gedit” parancs gedit (40.1-14-g0850b4ae32) snapből
+  „gedit” parancs gedit (3.36.2-0ubuntu1) deb csomagból
+
+See 'snap info <snapname>' for additional versions.
+
+[3]+  Kilépett(127)          geddit git_intro.txt
+hallgato@proto:~/Prog1$ cd week01
+hallgato@proto:~/Prog1/week01$ geddit git_intro.txt &
+[1] 2860
+hallgato@proto:~/Prog1/week01$ 
+„geddit” parancs nem található, erre gondolt:
+
+  „gedit” parancs gedit (40.1-14-g0850b4ae32) snapből
+  „gedit” parancs gedit (3.36.2-0ubuntu1) deb csomagból
+
+See 'snap info <snapname>' for additional versions.
+
+
+[1]+  Kilépett(127)          geddit git_intro.txt
+hallgato@proto:~/Prog1/week01$ gedit git_intro.txt &
+[1] 2880
+hallgato@proto:~/Prog1/week01$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	./
+
+nothing added to commit but untracked files present (use "git add" to track)
+[1]+  Kész                   gedit git_intro.txt
+hallgato@proto:~/Prog1/week01$ git add git_intro.txt
+hallgato@proto:~/Prog1/week01$ git commit git_intro.txt -m "Git intro upload" 
+[main c94746d] Git intro upload
+ 1 file changed, 8 insertions(+)
+ create mode 100644 week01/git_intro.txt
+hallgato@proto:~/Prog1/week01$ git push
+Warning: Permanently added the ECDSA host key for IP address '140.82.121.3' to the list of known hosts.
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 351 bytes | 351.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:akaratsony/Prog1.git
+   f5fa988..c94746d  main -> main
