@@ -120,6 +120,12 @@ hallgato@proto:~/Prog1/week01$
 
 See 'snap info <snapname>' for additional versions.
 
+HA modoitom a fájlt és felszeretném tölteni akkor:
+git diff
+git status
+git commit git_intro.txt -m "Extended git tutorial"
+git push
+git pull
 
 [1]+  Kilépett(127)          geddit git_intro.txt
 hallgato@proto:~/Prog1/week01$ gedit git_intro.txt &
