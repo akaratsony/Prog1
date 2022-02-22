@@ -156,3 +156,11 @@ Total 4 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:akaratsony/Prog1.git
    f5fa988..c94746d  main -> main
+
+törlés mappa
+git config --list
+git rm git_intro.txt
+git commit -m "Remove file"
+git push
+git status
+git diff
